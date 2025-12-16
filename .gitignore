@@ -1,0 +1,61 @@
+# ===============================
+# Android / Gradle
+# ===============================
+
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+build/
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# Local configuration
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Logs
+*.log
+
+# ===============================
+# Kotlin / Java
+# ===============================
+
+*.kotlin_module
+
+# ===============================
+# OS files
+# ===============================
+
+.DS_Store
+Thumbs.db
+
+# ===============================
+# NDK / CMake
+# ===============================
+
+.externalNativeBuild/
+.cxx/
+
+# ===============================
+# Temporary / cache
+# ===============================
+
+captures/
+.navigation/
+lint/
+lint-results*.xml
