@@ -20,9 +20,9 @@ import android.opengl.GLES30;
 
 import com.google.ar.core.Coordinates2d;
 import com.google.ar.core.Frame;
-import com.google.ar.core.examples.java.common.samplerender.Framebuffer;
-import com.google.ar.core.examples.java.common.samplerender.Mesh;
-import com.google.ar.core.examples.java.common.samplerender.SampleRender;
+import com.google.ar.core.common.samplerender.Framebuffer;
+import com.example.iip_dunkin_duo.common.samplerender.Mesh;
+import com.example.iip_dunkin_duo.common.samplerender.SampleRender;
 import com.google.ar.core.examples.java.common.samplerender.Shader;
 import com.google.ar.core.examples.java.common.samplerender.Texture;
 import com.google.ar.core.examples.java.common.samplerender.VertexBuffer;
