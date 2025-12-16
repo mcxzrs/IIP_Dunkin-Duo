@@ -20,12 +20,12 @@ import android.opengl.GLES30;
 
 import com.google.ar.core.Coordinates2d;
 import com.google.ar.core.Frame;
-import com.google.ar.core.common.samplerender.Framebuffer;
+import com.example.iip_dunkin_duo.common.samplerender.Framebuffer;
 import com.example.iip_dunkin_duo.common.samplerender.Mesh;
 import com.example.iip_dunkin_duo.common.samplerender.SampleRender;
-import com.google.ar.core.examples.java.common.samplerender.Shader;
-import com.google.ar.core.examples.java.common.samplerender.Texture;
-import com.google.ar.core.examples.java.common.samplerender.VertexBuffer;
+import com.example.iip_dunkin_duo.common.samplerender.Shader;
+import com.example.iip_dunkin_duo.common.samplerender.Texture;
+import com.example.iip_dunkin_duo.common.samplerender.VertexBuffer;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -81,6 +81,7 @@ public class BackgroundRenderer {
    * during a {@link SampleRender.Renderer} callback, typically in {@link
    * SampleRender.Renderer#onSurfaceCreated()}.
    */
+
   public BackgroundRenderer(SampleRender render) {
     cameraColorTexture =
         new Texture(
