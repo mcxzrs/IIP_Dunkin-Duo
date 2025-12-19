@@ -5,6 +5,7 @@ import com.google.ar.core.*
 import javax.microedition.khronos.opengles.GL10
 import javax.microedition.khronos.egl.EGLConfig
 import android.opengl.GLSurfaceView
+import android.view.MotionEvent
 import com.example.iip_dunkin_duo.ar.render.BackgroundRenderer
 import com.example.iip_dunkin_duo.common.samplerender.SampleRender
 
@@ -54,6 +55,25 @@ class ArRenderer(
         if (camera.trackingState != TrackingState.TRACKING) return
 
         // draw image planes here later
+        tap?.let { event ->
+            val hits = frame.hitTest(event)
+            for (hit in hits) {
+                val trackable = hit.trackable
+                if (trackable is Plane && trackable.isPoseInPolygon(hit.hitPose)) {
+                    placeImage(hit)
+                    break
+                }
+            }
+            tap = null
+        }
+
     }
+
+    var tap: MotionEvent? = null
+
+    fun onTap(event: MotionEvent) {
+        tap = event
+    }
+
 
 }
